@@ -1,4 +1,4 @@
-# Symfony plugin for Loadsman
+# Symfony plugin for [Loadsman](https://github.com/loadsman/loadsman)
 
 [![Chat][gitter-badge]][gitter-url]
 
