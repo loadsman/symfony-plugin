@@ -5,12 +5,12 @@
 ## Installation
 
 1) Require this package with composer:
-``` 
+```sh
 composer require loadsman/symfony-plugin
 ```
 
 2) Add `LoadsmanSymfonyBundle` to `AppKernel` as dev bundle. Like this:
-```
+```php
 if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
     // ...
     new \Loadsman\SymfonyPlugin\LoadsmanSymfonyBundle(),
@@ -18,7 +18,7 @@ if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
 ```
 
 3) Then add routes to `routing_dev.yml`:
-```
+```yaml
 loadsman-symfony:
     resource: "@LoadsmanSymfonyBundle/Controller/"
     type:     annotation
